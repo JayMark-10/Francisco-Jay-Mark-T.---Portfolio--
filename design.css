@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ccc;
+    font-family: sans-serif, 'Poppins';
+}
+
+body {
+    line-height: 1.6;
+
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 60px;
+    border-radius: 30%;
+
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.links li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#home {
+    background-color: #121212;
+    padding: 60px 20px;
+
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.home-text {
+    flex: 1 1 300px;
+    min-width: 250px;
+
+}
+
+.home-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    max-width: 100%;
+
+}
+
+#about {
+    background-color: #1e1e1e;
+    padding: 60px 20px;
+    color: black;
+    
+
+
+}
+
+.about-container {
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+
+}
+
+#projects {
+    background-color: #121212;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project button {
+    background-color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: large;
+    width: 200px;
+}
+
+.project button a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact {
+    background-color: #1e1e1e;
+    padding: 60px 20px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+
+.submit-button {
+    margin-top: 15px;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .home-img {
+        margin-top: 20px;
+    }
+}
